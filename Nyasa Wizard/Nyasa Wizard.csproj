@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C07A6C45-4B0B-421D-B4E6-3BEFC5D5F697}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nyasa_Wizard</RootNamespace>
+    <AssemblyName>Nyasa Wizard</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DocumentViews\PageEditViewArguments.cs" />
+    <Compile Include="Document\LineValues.cs" />
+    <Compile Include="Document\MNLine.cs" />
+    <Compile Include="Document\MNPageTextObject.cs" />
+    <Compile Include="Property Views\LineProperties.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Property Views\LineProperties.Designer.cs">
+      <DependentUpon>LineProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Property Views\ImageProperties.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Property Views\ImageProperties.Designer.cs">
+      <DependentUpon>ImageProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Property Views\NyasaMantraProperties.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Property Views\NyasaMantraProperties.Designer.cs">
+      <DependentUpon>NyasaMantraProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Property Views\DocumentProperties.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Property Views\DocumentProperties.Designer.cs">
+      <DependentUpon>DocumentProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Property Views\PageProperties.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Property Views\PageProperties.Designer.cs">
+      <DependentUpon>PageProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentViews\ImagesListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocumentViews\ImagesListView.Designer.cs">
+      <DependentUpon>ImagesListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertMantraDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertMantraDialog.Designer.cs">
+      <DependentUpon>InsertMantraDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentViews\MantrasView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocumentViews\MantrasView.Designer.cs">
+      <DependentUpon>MantrasView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Document\MNDocument.cs" />
+    <Compile Include="Document\MNPagePoint.cs" />
+    <Compile Include="Document\MNPageContext.cs" />
+    <Compile Include="Document\MNPageMantra.cs" />
+    <Compile Include="Document\MNPage.cs" />
+    <Compile Include="Document\MNPageImage.cs" />
+    <Compile Include="Document\MNPageObject.cs" />
+    <Compile Include="Document\MNPageTextWithImage.cs" />
+    <Compile Include="Document\MNReferencedImage.cs" />
+    <Compile Include="Document\MNReferencedMantra.cs" />
+    <Compile Include="DocumentViews\PageEditView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocumentViews\PageEditView.Designer.cs">
+      <DependentUpon>PageEditView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PagePropertiesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PagePropertiesDialog.Designer.cs">
+      <DependentUpon>PagePropertiesDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PictureSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PictureSettings.Designer.cs">
+      <DependentUpon>PictureSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Property Views\SimpleTextProperties.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Property Views\SimpleTextProperties.Designer.cs">
+      <DependentUpon>SimpleTextProperties.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Property Views\LineProperties.resx">
+      <DependentUpon>LineProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Property Views\ImageProperties.resx">
+      <DependentUpon>ImageProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Property Views\NyasaMantraProperties.resx">
+      <DependentUpon>NyasaMantraProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Property Views\DocumentProperties.resx">
+      <DependentUpon>DocumentProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Property Views\PageProperties.resx">
+      <DependentUpon>PageProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentViews\ImagesListView.resx">
+      <DependentUpon>ImagesListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertMantraDialog.resx">
+      <DependentUpon>InsertMantraDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentViews\MantrasView.resx">
+      <DependentUpon>MantrasView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentViews\PageEditView.resx">
+      <DependentUpon>PageEditView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagePropertiesDialog.resx">
+      <DependentUpon>PagePropertiesDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PictureSettings.resx">
+      <DependentUpon>PictureSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Property Views\SimpleTextProperties.resx">
+      <DependentUpon>SimpleTextProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
